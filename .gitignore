@@ -1,4 +1,8 @@
 # CakePHP 3
+.vscode
+Bucket5.txt
+Bucket6.txt
+process.php
 
 /vendor/*
 /config/app.php

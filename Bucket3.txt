@@ -1,0 +1,22 @@
+/* Php code */
+<? php
+if (isset($_POST["submit"] )) {
+$student_id = $_POST["student_id"];
+$first_name = $_POST["first_name"];
+$last_name = $_POST["last_name"];
+$program_of_study =$_POST["program_of_study"];
+if (!empty($first_name) && !empty($last_name) && !empty($email) && !empty($color))
+    $link = mysqli_connect("hostname","user_name","password","db_name");
+    if ($link==false){
+        die(mysqli_connect_error());
+    }
+    $sql = "INSERT INTO students (student_id, first_name, last_name, program_of_study) VALUES ('$student_id','$first_name','$last_name','$program_of_study')";
+    if (mysqli_query($link, $sql)) {
+	    echo "Record inserted successfully";
+    }else{
+	    echo "Something went wrong";
+    }
+}else {
+    echo "Please provide all information";
+}
+?>

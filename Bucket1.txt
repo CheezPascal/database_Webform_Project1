@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+/* First itiration of the code  */
+<head>
+    <meta charset="UTF-8">
+    <title>Student Data Entry</title>
+</head>
+
+<body>
+    <h2>Enter Student Information</h2>
+    <form action="/submit" method="POST">
+        <label for="student_id">Student ID:</label><br>
+        <input type="text" id="student_id" name="student_id"><br><br>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br><br>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="program_of_study">Program of Study:</label><br>
+        <input type="text" id="program_of_study" name="program_of_study"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

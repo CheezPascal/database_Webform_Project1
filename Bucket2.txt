@@ -1,0 +1,12 @@
+# The selection panel 
+<div class="form-group">
+	<select name="Program of Study" id="">
+		<option value="">Choose Color</option>
+		<option value="Chemistry">Chemistry</option>
+		<option value="Biology">Biology</option>
+		<option value="Astrology">Astrology</option>
+		<option value="English">English</option>
+		<option value="French">French</option>
+		<option value="Physics">Physics</option>
+		<option value="Acting">Acting</option>
+</select>
