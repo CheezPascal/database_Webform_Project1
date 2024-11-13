@@ -70,6 +70,35 @@
         </form>
     </div>
 
+    <script>
+
+
+        document.querySelector('form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Prevent default form submission  
+
+            // Get form values
+            var studentId = document.getElementById('student_id').value;
+            var firstName = document.getElementById('first_name').value;
+            var lastName = document.getElementById('last_name').value;
+            var programOfStudy = document.getElementById('program_of_study').value;
+
+            // Display confirmation page
+            document.body.innerHTML = `
+                <div class="container">
+                    <div class="form-group">
+                <h2>Confirmation of Submission</h2>
+                <p>You have submitted!</p>
+                <p>Student ID: ${studentId}</p>
+                <p>Name: ${firstName} ${lastName}</p>
+                <p>Program of Study: ${programOfStudy}</p>
+                </div>
+                </div>
+            `;
+        });
+
+
+    </script>
 </body>
 
 </html>
